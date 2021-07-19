@@ -1,0 +1,31 @@
+<div id="background-custom"
+    style="background-image: url(../../../assets/background-login.jpg);background-repeat: no-repeat; background-size: cover;">
+    <div id="login-custom">
+        <mat-card-header>
+            <mat-card-subtitle>Đăng nhập</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Tài khoản</mat-label>
+                <input matInput placeholder="username" [formControl]="email" (keyup)="onKey($event)" required #taiKhoan>
+            </mat-form-field>
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="password" [formControl]="password" required (keyup)="onKey($event)" required #pass>
+            </mat-form-field>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <div >
+                <button mat-raised-button color="primary" [disabled]="click">Đăng
+                    nhập</button>
+
+            </div>
+           
+
+        </mat-card-actions>
+    </div>
+</div>
