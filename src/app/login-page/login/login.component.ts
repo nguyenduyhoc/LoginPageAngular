@@ -10,14 +10,14 @@ import {
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  email = new FormControl('', [Validators.required]);
+  user = new FormControl('', [Validators.required]);
   password = new FormControl('', [Validators.required ]);
   public click: boolean = true;
+  public searchUser: string='';
+  public searchPassword: string='';
 
   constructor() {}
-  onKey(event: KeyboardEvent) {
-    this.click = (event.target as HTMLInputElement).value === '' ? true : false;
-  }
+ 
  
 
   ngOnInit(): void {}
