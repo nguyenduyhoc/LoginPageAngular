@@ -10,8 +10,8 @@ import {
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  email = new FormControl('', [Validators.required, Validators.email]);
-  password = new FormControl('', [Validators.required, Validators.email]);
+  email = new FormControl('', [Validators.required]);
+  password = new FormControl('', [Validators.required ]);
   public click: boolean = true;
 
   constructor() {}
